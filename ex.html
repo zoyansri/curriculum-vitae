@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Paper Fold Demo</title>
+  <link rel="stylesheet" href="ex.css" />
+</head>
+<body>
+  <main class="stage">
+    <div class="controls">
+      <button id="foldBtn">Fold</button>
+      <button id="unfoldBtn">Unfold</button>
+      <label><input id="animateToggle" type="checkbox" checked /> animate</label>
+    </div>
+
+    <div class="paper" id="paper" aria-label="Folded paper demo">
+      <span class="label top-left">Top-Left</span>
+      <span class="label top-right">Top-Right</span>
+      <span class="label bottom-left">Bottom-Left</span>
+      <span class="label bottom-right">Bottom-Right</span>
+
+      <div class="sheet">
+        <div class="half top">
+          <div class="content">Top half</div>
+        </div>
+        <div class="half bottom">
+          <div class="content">Bottom half</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="ex.js"></script>
+</body>
+</html>
